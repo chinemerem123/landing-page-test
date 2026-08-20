@@ -82,7 +82,7 @@ img{
 
 #hero{
     width: 100%;
-    position: relative;
+    position:16pc relative;
     height: 92vh;
     background-image: url("../img/praveen-gupta-YhfxJpa_Ch0-unsplash.jpg");
     background-position: center;
@@ -120,6 +120,166 @@ img{
     }
 }
 
+#bloglist{
+    padding:50px;
+    width: 100%;
+    
+    // margin-top: 50px;
+
+    .row{
+        margin-top: 50px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap:25px;
+
+        .col-1{
+           
+            .card{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 380px;
+                }
+                h3{
+                    margin-top: 20px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: gray;
+                    padding-top: 5px;
+                    line-height: 22px;
+                }
+
+                .dp{
+                    display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  color: gray;
+                  margin-top: 8px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .load{
+        width: 100%;
+text-align: center;
+margin-top:30px;
+
+ a{
+        padding: 12px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 12px;
+    }
+    }
+
+   
+}
+
+#footer-holder{
+padding: 50px;
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin-top: 30px;
+    }
+    p{
+         text-align: center;
+         font-weight: 400;
+         font-size:14px;
+         padding:8px;
+         color: rgb(182, 182, 182);
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top:16px;
+
+        button{
+            border: 1px solid rgb(185, 185, 185);
+            background-color: transparent;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            width: 150px;
+
+            :hover{
+                background-color: rgba(255, 255, 255,0.5);
+            }
+        }
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        padding: 50px;
+        
+        .col1{
+.footer-items{
+    width: 100%;
+
+    ul{
+        li{
+            list-style: none;
+            padding-top: 12px;
+            font-size: 14px;
+            color: #cecece;
+ a{
+        position: relative;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+
+    }
+        }
+    }
+   
+}
+        }
+    }
+
+    .je{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        img{
+            width: 70px;
+            position: absolute;
+            left:50px;
+        }
+        span{
+            position: absolute;
+            right: 50px;
+        }
+    }
+}
+
+}
+
+
 @media screen and (max-width:800px){
     
     .header{
@@ -136,6 +296,54 @@ img{
         display:block;
       }
     }
+
+    #hero{
+    
+
+    .overlay{
+       padding: 20px;
+     
+        .overlay-content{
+          
+        }
+
+        span{
+         
+        }
+
+        h1{
+            margin-top:15px;
+            font-size: 25px;
+        }
+        p{
+            font-weight: lighter;
+            padding-top:5px ;
+            font-size: 20px;
+        }
+    }
+}
+
+#bloglist{
+    padding:20px;
+
+    .row{
+        display: block;
+
+        .col-1{
+            margin-top: 15px;
+        }
+    }
+}
+
+#footer-holder{
+    padding: 20px;
+
+    .footer{
+        .row{
+            display: block;
+        }
+    }
+}
 
 
 }

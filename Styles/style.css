@@ -71,7 +71,7 @@ body {
 
 #hero {
   width: 100%;
-  position: relative;
+  position: 16pc relative;
   height: 92vh;
   background-image: url("../img/praveen-gupta-YhfxJpa_Ch0-unsplash.jpg");
   background-position: center;
@@ -104,6 +104,137 @@ body {
   font-size: 20px;
 }
 
+#bloglist {
+  padding: 50px;
+  width: 100%;
+}
+#bloglist .row {
+  margin-top: 50px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 25px;
+}
+#bloglist .row .col-1 .card {
+  width: 100%;
+  height: auto;
+}
+#bloglist .row .col-1 .card img {
+  width: 100%;
+  border-radius: 20px;
+  height: 380px;
+}
+#bloglist .row .col-1 .card h3 {
+  margin-top: 20px;
+}
+#bloglist .row .col-1 .card p {
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+  padding-top: 5px;
+  line-height: 22px;
+}
+#bloglist .row .col-1 .card .dp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: gray;
+  margin-top: 8px;
+}
+#bloglist .row .col-1 .card .dp img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#bloglist .load {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#bloglist .load a {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 12px;
+}
+
+#footer-holder {
+  padding: 50px;
+}
+#footer-holder .footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+}
+#footer-holder .footer h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+#footer-holder .footer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px;
+  color: rgb(182, 182, 182);
+}
+#footer-holder .footer .btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+#footer-holder .footer .btns button {
+  border: 1px solid rgb(185, 185, 185);
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 150px;
+}
+#footer-holder .footer .btns button :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#footer-holder .footer .row {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  padding: 50px;
+}
+#footer-holder .footer .row .col1 .footer-items {
+  width: 100%;
+}
+#footer-holder .footer .row .col1 .footer-items ul li {
+  list-style: none;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #cecece;
+}
+#footer-holder .footer .row .col1 .footer-items ul li a {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+#footer-holder .footer .je {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#footer-holder .footer .je img {
+  width: 70px;
+  position: absolute;
+  left: 50px;
+}
+#footer-holder .footer .je span {
+  position: absolute;
+  right: 50px;
+}
+
 @media screen and (max-width: 800px) {
   .header {
     padding-top: 35px;
@@ -115,6 +246,33 @@ body {
     display: none;
   }
   .header .menu-bugger {
+    display: block;
+  }
+  #hero .overlay {
+    padding: 20px;
+  }
+  #hero .overlay h1 {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  #hero .overlay p {
+    font-weight: lighter;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  #bloglist {
+    padding: 20px;
+  }
+  #bloglist .row {
+    display: block;
+  }
+  #bloglist .row .col-1 {
+    margin-top: 15px;
+  }
+  #footer-holder {
+    padding: 20px;
+  }
+  #footer-holder .footer .row {
     display: block;
   }
 }/*# sourceMappingURL=style.css.map */
